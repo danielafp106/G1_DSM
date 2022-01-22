@@ -1,21 +1,26 @@
 import java.util.Scanner;
 
-class Main {
+class E3 {
   public static void main(String[] args) {
     Scanner leer = new Scanner(System.in);
     System.out.println("-------------------------------------");
-    System.out.println("     NÚMEROS DIVISIBLES ENTRE SÍ");
+    System.out.println("          PARES E IMPARES");
     System.out.println("-------------------------------------");
-    System.out.println("Ingrese el primero número:");
-    int n1 = leer.nextInt();
-    System.out.println("Ingrese el segundo número:");
-    int n2 = leer.nextInt();
-    System.out.println("-------------------------------------");
-    if (n1 % n2 == 0) {
-      System.out.println("    " + n1 + " es divisible entre " + n2);
-    } else {
-      System.out.println("    " + n1 + " NO es divisible entre " + n2);
+    System.out.println("Ingrese cuantos números desea ingresar:");
+    int n = leer.nextInt();
+    int par = 0;
+    int impar = 0;
+    for (int i = 0; i < n; i++) {
+      System.out.println("Ingrese la cantidad #"+(i+1)+": ");
+      if (leer.nextInt() % 2 == 0) {
+        par++;
+      } else {
+        impar++;
+      }
     }
+    System.out.println("-------------------------------------");
+    System.out.println("CANTIDAD NUMEROS PARES: " + par);
+    System.out.println("CANTIDAD NUMEROS IMPARES: " + impar);
     leer.close();
   }
 }

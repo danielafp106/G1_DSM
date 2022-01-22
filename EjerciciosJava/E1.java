@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class E1 {
   public static void main(String[] args) {
     Scanner leer = new Scanner(System.in);
     System.out.println("-------------------------------------");
