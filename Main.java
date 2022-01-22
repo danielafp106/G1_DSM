@@ -12,7 +12,7 @@ class Main {
     int n2 = leer.nextInt();
     System.out.println("-------------------------------------");
     if (n1 % n2 == 0) {
-      System.out.println(n1 + " es divisible entre " + n2);
+      System.out.println("    " + n1 + " es divisible entre " + n2);
     } else {
       System.out.println("    " + n1 + " NO es divisible entre " + n2);
     }
