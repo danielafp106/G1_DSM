@@ -14,7 +14,7 @@ class Main {
     if (n1 % n2 == 0) {
       System.out.println(n1 + " es divisible entre " + n2);
     } else {
-      System.out.println("   " + n1 + " NO es divisible entre " + n2);
+      System.out.println("    " + n1 + " NO es divisible entre " + n2);
     }
     leer.close();
   }
